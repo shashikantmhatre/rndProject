@@ -1,0 +1,30 @@
+{
+  "Policy": {
+    "InsuredOrPrincipalInfo": {
+      "InsuredOrPrincipalRoleCd": "FNI",
+      "PersonInfo": {
+        "BirthDt": "1971-11-17",
+        "MaritalStatusCd": "M"
+      }
+    },
+    "LOBCd": "HOME",
+    "PolicyTypeCd": 3,
+    "ContractTerm": {
+      "EffectiveDt": "2015-05-31",
+      "ExpirationDt": "2016-05-31",
+      "DurationPeriod": {
+        "NumUnits": 12,
+        "UnitMeasurementCd": "MO"
+      },
+      "ContractType": "NEW"
+    },
+    "Vehicle":[
+      {
+        "Color" : "Red"
+      },
+      {
+        "Color" : "Yellow"
+      }
+      ]
+  }
+}

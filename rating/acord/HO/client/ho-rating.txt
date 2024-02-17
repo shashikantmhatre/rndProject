@@ -1,0 +1,9 @@
+let x = ACORD.InsuranceSvcRq.HomePolicyQuoteInqRq
+
+let zipCode = get ( x.InsuredOrPrincipal[InsuredOrPrincipalInfo.InsuredOrPrincipalRoleCd = "FNI"].GeneralPartyInfo.Addr[AddrTypeCd = "MailingAddress"].PostalCode )
+
+foreach cov in x.HomeLineBusiness.Dwell.Coverage do
+    cov.Premium = 2000
+end
+
+return x

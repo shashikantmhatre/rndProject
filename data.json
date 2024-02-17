@@ -1,0 +1,84 @@
+{
+  "policy": {
+    "InsuredOrPrincipalInfo": {
+      "InsuredOrPrincipalRoleCd": "FNI",
+      "PersonInfo": {
+        "BirthDt": "1971-11-17",
+        "MaritalStatusCd": "M"
+      }
+    },
+    "LOBCd": "HOME",
+    "PolicyTypeCd": 3,
+    "ContractTerm": {
+      "EffectiveDt": "2015-05-31",
+      "ExpirationDt": "2016-05-31",
+      "DurationPeriod": {
+        "NumUnits": 12,
+        "UnitMeasurementCd": "MO"
+      },
+      "ContractType": "NEW"
+    },
+    "property": {
+      "address": {
+        "city": "",
+        "state": "",
+        "zip": 53010,
+        "county": 1,
+        "censustrack": 950100,
+        "censusblock": 1
+      },
+      "protectionclass": 1,
+      "construction": {
+        "age": 10,
+        "type": "frame"
+      }
+    },
+    "coverages": {
+      "coverage": [
+        {
+          "code": "A",
+          "limit": 300000,
+          "deductible": 1000,
+          "winddeductible": 550,
+          "perils": {
+            "peril": [
+              {
+                "code": "p1"
+              },
+              {
+                "code": "p2"
+              },
+              {
+                "code": "p3"
+              },
+              {
+                "code": "p4"
+              },
+              {
+                "code": "p5"
+              },
+              {
+                "code": "p6"
+              },
+              {
+                "code": "p7"
+              },
+              {
+                "code": "p8"
+              },
+              {
+                "code": "p9"
+              }
+            ]
+          },
+          "earthquake": "Y",
+          "hurricane": "Y"
+        },
+        {
+          "code": "B",
+          "limit": 300000
+        }
+      ]
+    }
+  }
+}

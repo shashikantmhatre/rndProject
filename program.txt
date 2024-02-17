@@ -1,0 +1,18 @@
+let x = person
+let y = x.address
+if x.age = 25 then
+    x.age = 30
+end
+
+foreach z of y do
+    if z.zip = "12345" then
+        z.population = 312344
+    end
+end
+
+let p = 0
+for g in 10 do
+    p = g
+end
+
+return x

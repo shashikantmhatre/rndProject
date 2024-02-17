@@ -1,0 +1,29 @@
+let x = policy
+
+
+let zipCode = get ( x.property.address.zip )
+
+foreach peril in x.coverages.coverage[code = "A"].perils.peril do
+    peril.premium = 50
+end
+
+
+x.premium = 1000
+
+let cov_a = get( x.coverages.coverage[code = "A"])
+cov_a.something = "xyz"
+
+
+let newNode = {}
+newNode.field1 = 1
+newNode.field2 = "Something"
+
+x.newNode = newNode
+
+let newList = []
+add ( newList , newNode )
+
+x.newList = newList
+
+
+return x

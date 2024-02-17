@@ -1,0 +1,400 @@
+{
+  "ACORD": {
+    "SignonRq": {
+      "SignonTransport": {
+        "SignonRoleCd": "Agent",
+        "CustId": {
+          "SPName": "to-be-provided-by-InsureSpire",
+          "CustPermId": "xmlcattest",
+          "CustLoginId": "xmlcattest"
+        }
+      },
+      "ClientDt": "2014-01-15T09:30:20",
+      "CustLangPref": "ENG",
+      "ClientApp": {
+        "Org": "Internet",
+        "Name": "to-be-provided-by-InsureSpire",
+        "Version": 1.6
+      }
+    },
+    "InsuranceSvcRq": {
+      "RqUID": "00000000-0000-0000-0000-000000000000",
+      "HomePolicyQuoteInqRq": {
+        "RqUID": "00000000-0000-0000-0000-000000000000",
+        "TransactionRequestDt": "2014-01-15T09:30:20",
+        "CurCd": "USD",
+        "InsuredOrPrincipal": [
+          {
+            "GeneralPartyInfo": {
+              "NameInfo": {
+                "PersonName": {
+                  "Surname": "CATest",
+                  "GivenName": "H3",
+                  "OtherGivenName": "B"
+                },
+                "TaxIdentity": {
+                  "TaxIdTypeCd": "SSN",
+                  "TaxId": 505555555
+                }
+              },
+              "Addr": [
+                {
+                  "AddrTypeCd": "MailingAddress",
+                  "Addr1": "336 N Louise St",
+                  "City": "Glendale",
+                  "StateProvCd": "CA",
+                  "PostalCode": 91206
+                },
+                {
+                  "AddrTypeCd": "PreviousAddress",
+                  "Addr1": "1301 Jones St",
+                  "City": "Omaha",
+                  "StateProvCd": "NE",
+                  "PostalCode": 68102
+                }
+              ],
+              "Communications": {
+                "PhoneInfo": [
+                  {
+                    "CommunicationUseCd": "Home",
+                    "PhoneNumber": "+1-540-555-1212"
+                  },
+                  {
+                    "CommunicationUseCd": "Business",
+                    "PhoneNumber": "+1-540-555-1212"
+                  }
+                ],
+                "EmailInfo": {
+                  "EmailAddr": "test@test.com"
+                },
+                "com.InsureSpire_Paperless": "Y"
+              }
+            },
+            "InsuredOrPrincipalInfo": {
+              "InsuredOrPrincipalRoleCd": "FNI",
+              "PersonInfo": {
+                "BirthDt": "1971-11-17",
+                "MaritalStatusCd": "M"
+              }
+            }
+          },
+          {
+            "GeneralPartyInfo": {
+              "NameInfo": {
+                "PersonName": {
+                  "Surname": "TestingSpouse",
+                  "GivenName": "H3"
+                }
+              }
+            },
+            "InsuredOrPrincipalInfo": {
+              "InsuredOrPrincipalRoleCd": "AI",
+              "PersonInfo": {
+                "BirthDt": "1972-10-07"
+              }
+            }
+          }
+        ],
+        "PersPolicy": {
+          "LOBCd": "HOME",
+          "ContractTerm": {
+            "EffectiveDt": "2015-05-31",
+            "ExpirationDt": "2016-05-31",
+            "DurationPeriod": {
+              "NumUnits": 12,
+              "UnitMeasurementCd": "MO"
+            }
+          },
+          "Loss": {
+            "LossDt": "2010-08-11",
+            "TotalPaidAmt": {
+              "Amt": 2500
+            },
+            "LossCauseCd": "Weather",
+            "ClaimStatusCd": "C"
+          },
+          "OtherOrPriorPolicy": {
+            "PolicyCd": "Other",
+            "PolicyNumber": "NV0123456",
+            "LOBCd": "AUTOP",
+            "InsurerName": "InsureSpire"
+          },
+          "PersApplicationInfo": {
+            "InsuredOrPrincipal": "",
+            "ResidenceOwnedRentedCd": "OWNED"
+          },
+          "com.InsureSpire_SpecialRequest": ""
+        },
+        "Location": {
+          "ItemIdInfo": "",
+          "Addr": {
+            "AddrTypeCd": "PhysicalRisk",
+            "Addr1": "24 Creek Tree Ln",
+            "City": "Almo",
+            "StateProvCd": "CA",
+            "PostalCode": 94507
+          },
+          "AdditionalInterest": {
+            "GeneralPartyInfo": {
+              "NameInfo": {
+                "CommlName": {
+                  "CommercialName": "BANK OF AMERICA, N.A."
+                }
+              },
+              "Addr": {
+                "Addr1": "ISAOA ATIMA",
+                "Addr2": "PO BOX 961291",
+                "City": "FORT WORTH",
+                "StateProvCd": "TX",
+                "PostalCode": 76161
+              }
+            },
+            "AdditionalInterestInfo": {
+              "NatureInterestCd": "MORTG",
+              "InterestRank": 1,
+              "AccountNumberId": 12345,
+              "com.InsureSpire_BillMortgagee": "YES"
+            }
+          }
+        },
+        "HomeLineBusiness": {
+          "LOBCd": "HOME",
+          "Dwell": {
+            "PolicyTypeCd": 3,
+            "PurchaseDt": 2012,
+            "Construction": {
+              "ConstructionCd": "F",
+              "YearBuilt": 1975,
+              "FoundationCd": "BS",
+              "RoofingMaterial": {
+                "RoofMaterialCd": "ASPHS"
+              },
+              "ElectricalPanelCd": "CIRC"
+            },
+            "DwellOccupancy": {
+              "YearOccupancy": 2005,
+              "ResidenceTypeCd": "DW",
+              "DwellUseCd": 1,
+              "OccupancyTypeCd": "OWNER",
+              "com.InsureSpire_IsCorporationOwned": "YES",
+              "com.InsureSpire_CorporationOwnerName": "XYZ Inc.",
+              "com.InsureSpire_CorporationOwnerPhone": "+1-540-555-1234"
+            },
+            "BldgProtection": {
+              "DistanceToFireStation": {
+                "NumUnits": 3,
+                "UnitMeasurementCd": "MI"
+              },
+              "DistanceToHydrant": {
+                "NumUnits": 10,
+                "UnitMeasurementCd": "FT"
+              },
+              "FireExtinguisherInd": 1,
+              "ProtectionDeviceBurglarCd": "CN",
+              "ProtectionDeviceFireCd": "CN",
+              "ProtectionDeviceSmokeCd": "NO",
+              "ProtectionDeviceSprinklerCd": "NO",
+              "DoorLockCd": "DEADB",
+              "ProtectionClass": 1
+            },
+            "BldgImprovements": {
+              "HeatingImprovementYear": 2008,
+              "PlumbingImprovementYear": 2010,
+              "RoofingImprovementYear": 2006,
+              "WiringImprovementYear": 2010
+            },
+            "DwellInspectionValuation": {
+              "NumFamilies": 1,
+              "NumStoriesInDwellingCd": 2,
+              "BathroomInfo": {
+                "NumBathrooms": 1,
+                "ConstructionQualityCd": "Basic"
+              },
+              "FireplaceInfo": {
+                "NumFireplaces": 1
+              },
+              "GarageInfo": {
+                "GarageTypeCd": "Frame",
+                "AttachedInd": 1,
+                "NumGarages": 1
+              },
+              "KitchenInfo": {
+                "ConstructionQualityCd": "Basic"
+              },
+              "SubstructureInfo": {
+                "GroundFloorPct": 1,
+                "FinishedBasementInfo": {
+                  "FinishedBasementPct": 0.5
+                }
+              },
+              "TotalLivingArea": {
+                "NumUnits": 1450
+              }
+            },
+            "Coverage": [
+              {
+                "CoverageCd": "DWELL",
+                "Limit": {
+                  "FormatInteger": 386000
+                },
+                "Deductible": {
+                  "FormatInteger": 1000,
+                  "DeductibleAppliesToCd": "AllPeril"
+                }
+              },
+              {
+                "CoverageCd": "OS",
+                "Limit": {
+                  "FormatInteger": 72200
+                }
+              },
+              {
+                "CoverageCd": "PP",
+                "Limit": {
+                  "FormatInteger": 212300
+                }
+              },
+              {
+                "CoverageCd": "LOU",
+                "Limit": {
+                  "FormatInteger": 154400
+                }
+              },
+              {
+                "CoverageCd": "PL",
+                "Limit": {
+                  "FormatInteger": 300000
+                }
+              },
+              {
+                "CoverageCd": "MEDPM",
+                "Limit": {
+                  "FormatInteger": 2000
+                }
+              },
+              {
+                "CoverageCd": "SAACA",
+                "Limit": {
+                  "FormatPct": 25
+                }
+              }
+            ],
+            "QuestionAnswer": [
+              {
+                "QuestionCd": "com.InsureSpire_InspectionNotification",
+                "YesNoCd": "YES"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_LimitedAccessLocation",
+                "YesNoCd": "YES"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_ExistingDamage",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_WorkersOnPremises",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_ExtendedVacancy",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "GENRL24",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_ViciousDogOrBiteHistory",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_OilStorageTank",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "GENRL20",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "GENRL15",
+                "YesNoCd": "YES"
+              },
+              {
+                "QuestionCd": "GENRL16",
+                "YesNoCd": "YES"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_PoolUnfenced",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_PermanentFoundation",
+                "YesNoCd": "YES"
+              },
+              {
+                "QuestionCd": "GENRL31",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "HOME24",
+                "YesNoCd": "YES"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_IndustrialLocation",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_MultiFamily",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_RoofSlopeValid",
+                "YesNoCd": "YES"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_RoofCondition",
+                "YesNoCd": "YES"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_RoomingOrBoarding",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_UnusualVehicleStorage",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_ConvertedGarage",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_UnusualConst",
+                "YesNoCd": "NO"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_RoofLess20Year",
+                "YesNoCd": "YES"
+              },
+              {
+                "QuestionCd": "com.InsureSpire_RoadAccess",
+                "YesNoCd": "YES"
+              }
+            ]
+          },
+          "PropertySchedule": {
+            "IsSummaryInd": 0,
+            "ItemValueAmt": {
+              "Amt": 10000
+            },
+            "PropertyClassCd": 144,
+            "ItemDefinition": {
+              "ItemTypeCd": "ScheduledProperty",
+              "ItemDesc": "some expensive silverware"
+            }
+          }
+        }
+      }
+    }
+  }
+}
